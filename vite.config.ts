@@ -5,6 +5,7 @@ import analog from '@analogjs/platform';
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  root: './src',
   publicDir: 'src/assets',
   build: {
     target: ['es2020'],
@@ -23,3 +24,4 @@ export default defineConfig(({ mode }) => ({
     'import.meta.vitest': mode !== 'production',
   },
 }));
+
